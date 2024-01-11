@@ -18,7 +18,7 @@ var navlogin = `<nav class="navbar navbar-expand-lg navigation1">
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="Foodies-faq.html">FAQ</a>
+                <a class="nav-link" href="Foodies-FAQ.html">FAQ</a>
             </li>
             
             <li class="nav-item">
