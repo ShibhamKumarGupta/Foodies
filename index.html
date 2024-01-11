@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" href="images/logo.png" type="icon/logo type">
+    <link rel="stylesheet" href="Foodies.css">
+    <title>Foodies</title>
+    <script src="Foodies.js"></script>
+    <script src="tarclogin.js" type="text/javascript"></script>
+    <script>
+        var udata = localStorage.getItem('udata');
+        var user = JSON.parse(udata);
+    </script>   
+</head>
+
+<body>
+    <!-- header design -->
+    <header>
+        <script>
+            if (user != null) {
+                document.writeln(navlogin);
+            }else{
+                document.writeln(navlogout);
+            }
+        </script>
+    </header>
+
+    <!-- section 1 top banner -->
+    <section id="home">
+        <div class="container-fluid px-0 top-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-mg-6 col-lg-5">
+                        <h1>Good food choices are good investments.</h1>
+                        <p>"Food, in the end, in our own tradition, is something holy. It's not about nutrients and
+                            calories. It's about sharing. It's about honesty. It's about identity."</p>
+                        <div class="mt-4">
+                            <button class="main-btn">Order Now <i class="fa-solid fa-basket-shopping ps-3"></i></button>
+                            <button class="white-btn ms-lg-4 mt-lg-0 mt-4">Order Now <i
+                                    class="fa-solid fa-angle-right ps-3"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- counter  -->
+  <section id="counter">
+    <section class="counter-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                    <h2>
+                        <span id="count1"></span>+
+                    </h2>
+                    <p>SAVINGS</p>
+                </div>
+                <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                    <h2>
+                        <span id="count2"></span>+
+                    </h2>
+                    <p>HEALTHY</p>
+                </div>
+                <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                    <h2>
+                        <span id="count3"></span>+
+                    </h2>
+                    <p>OFFERS</p>
+                </div>
+                <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                    <h2>
+                        <span id="count4"></span>+
+                    </h2>
+                    <p>TASTY</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  </section>
+
+
+    <!-- explore food section  -->
+
+    <section id="explore-food">
+        <div class="explore-food wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="text-content text-center">
+                        <h2>EXPLORE OUR FOODS</h2>
+                        <p>"If you really want to make a friend, go to someone's house and eat with him... the people
+                            who give you their food give you their heart." </p>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="images/chicken-biryani.webp" alt="img-3">
+                            <div class="pt-3">
+                                <h4>Chicken Biryani | Hyderabadi</h4>
+                                <p>Time: 30 - 45 Minutes | Serves: 1</p>
+                                <span>&#x20B9;120.00 <del>&#x20B9;180.00</del></span>
+                                <hr>
+                                <button class="mt-2 main-btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="images/spicy-burger.jpg" alt="img-3">
+                            <div class="pt-3">
+                                <h4>Spicy Chezzy Burger</h4>
+                                <p>Time: 15 - 20 Minutes | Serves: 1</p>
+                                <span>&#x20B9;80.00 <del>&#x20B9;110.00</del></span>
+                                <hr>
+                                <button class="mt-2 main-btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="images/Grilled-Cheese-Sandwich-SQ.jpg" alt="img-3">
+                            <div class="pt-3">
+                                <h4>Veg Grilled Cheeze Sandwich</h4>
+                                <p>Time: 10 - 15 Minutes | Serves: 1</p>
+                                <span>&#x20B9;75.50 <del>&#x20B9;90.00</del></span>
+                                <hr>
+                                <button class="mt-2 main-btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="images/Vegetable-Masala-Maggi-Recipe-Step-By-Step-Instructions-scaled.jpg"
+                                alt="img-3">
+                            <div class="pt-3">
+                                <h4>Vegetable Masala Maggi | Yummy</h4>
+                                <p>Time: 10 - 12 Minutes | Serves: 1</p>
+                                <span>&#x20B9;60.00 <del>&#x20B9;75.00</del></span>
+                                <hr>
+                                <button class="mt-2 main-btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="images/Momo_nepal.jpg" alt="img-3">
+                            <div class="pt-3">
+                                <h4>Streamed Momos | Nepali Style</h4>
+                                <p>Time: 15 - 20 Minutes | Serves: 1</p>
+                                <span>&#x20B9;70.00 <del>&#x20B9;95.00</del></span>
+                                <hr>
+                                <button class="mt-2 main-btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="images/chicken-chow-mein-recipe.jpg" alt="img-3">
+                            <div class="pt-3">
+                                <h4>Chicken Hakka Noodles</h4>
+                                <p>Time: 20 - 25 Minutes | Serves: 1</p>
+                                <span>&#x20B9;140.50 <del>&#x20B9;170.00</del></span>
+                                <hr>
+                                <button class="mt-2 main-btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="images/Peppy Paneer Pizza.jpg" alt="img-3">
+                            <div class="pt-3">
+                                <h4>Peppy Paneer Loaded Pizza</h4>
+                                <p>Time: 30 - 45 Minutes | Serves: 1</p>
+                                <span>&#x20B9;280.50 <del>&#x20B9;340.90</del></span>
+                                <hr>
+                                <button class="mt-2 main-btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="images/gulkhand-vanila-icecream.jpg" alt="img-3">
+                            <div class="pt-3">
+                                <h4>Gulkhand Vanila Icecream</h4>
+                                <p>Time: 5 - 10 Minutes | Serves: 1</p>
+                                <span>&#x20B9;110.00 <del>&#x20B9;130.60</del></span>
+                                <hr>
+                                <button class="mt-2 main-btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="images/Ninja-Creami-choco-icecream.webp" alt="img-3">
+                            <div class="pt-3">
+                                <h4>Ninja Creamy Choco Icecream</h4>
+                                <p>Time: 7 - 10 Minutes | Serves: 1</p>
+                                <span>&#x20B9;95.50 <del>&#x20B9;120.00</del></span>
+                                <hr>
+                                <button class="mt-2 main-btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="images/air-fryer-potato-fries-featured.jpg" alt="img-3">
+                            <div class="pt-3">
+                                <h4>Fresh Fries | Extra Crispy</h4>
+                                <p>Time: 15 - 20 Minutes | Serves: 1</p>
+                                <span>&#x20B9;60.00 <del>&#x20B9;80.00</del></span>
+                                <hr>
+                                <button class="mt-2 main-btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="images/paneer-butter-masala-5.webp" alt="img-3">
+                            <div class="pt-3">
+                                <h4>Panner Butter Masala</h4>
+                                <p>Time: 30 - 45 Minutes | Serves: 1</p>
+                                <span>&#x20B9;160.50 <del>&#x20B9;190.20</del></span>
+                                <hr>
+                                <button class="mt-2 main-btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="images/kerela-style-mutton.jpg" alt="img-3">
+                            <div class="pt-3">
+                                <h4>Kerala Style Mutton | 30% Off</h4>
+                                <p>Time: 40 - 50 Minutes | Serves: 1</p>
+                                <span>&#x20B9;310.50 <del>&#x20B9;380.00</del></span>
+                                <hr>
+                                <button class="mt-2 main-btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="images/veg-manchurian.jpg" alt="img-3">
+                            <div class="pt-3">
+                                <h4>Veg Manchurian</h4>
+                                <p>Time: 30 - 45 Minutes | Serves: 1</p>
+                                <span>&#x20B9;280.50 <del>&#x20B9;340.90</del></span>
+                                <hr>
+                                <button class="mt-2 main-btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="images/blue-ocean.webp" alt="img-3">
+                            <div class="pt-3">
+                                <h4>Blue Ocean Cocktail</h4>
+                                <p>Time: 5 - 10 Minutes | Serves: 1</p>
+                                <span>&#x20B9;110.00 <del>&#x20B9;130.60</del></span>
+                                <hr>
+                                <button class="mt-2 main-btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                        <div class="card">
+                            <img src="images/vegan-oreo-shake-8.jpg" alt="img-3">
+                            <div class="pt-3">
+                                <h4>Oreo Shake | Fully Chocolaty</h4>
+                                <p>Time: 7 - 10 Minutes | Serves: 1</p>
+                                <span>&#x20B9;95.50 <del>&#x20B9;120.00</del></span>
+                                <hr>
+                                <button class="mt-2 main-btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+   <!-- carousel section  -->
+    <section id="carousel-slide">
+        <div class="container">
+            <h2 class="text-center carousel-head">Family Meal With Good Taste</h2>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="1000">
+                        <img src="images/background-8.jpg" class="d-block w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="images/background-7.jpg" class="d-block w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="images/background-6.jpg" class="d-block w-100" alt="...">
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <p class="text-center mt-4">“The fondest memories are made when gathered around the table. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa cupiditate laborum rem assumenda animi mollitia incidunt odit, repellendus eaque et.”</p>
+        </div>
+    </section>
+
+
+  <!-- newsletter section  -->
+
+    <section id="newsletter">
+        <div class="newsletter wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-content text-center pb-4">
+                            <h2>Hurry! Subscribe Our Newsletter and get 25% Off</h2>
+                            <p>Limited time offer for this month. No Credit card required.</p>
+                        </div>
+                        <form lass="newsletter">
+                            <div class="row">
+                                <div class="col-md-8 col-12">
+                                    <input type="email" class="form-control" placeholder="Email Address here"
+                                        name="email">
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <button class="main-btn" type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="footer py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a class="footer-link" href="#">Register</a>
+                        <a class="footer-link" href="#">Form</a>
+                        <a class="footer-link" href="#">Affiliate</a>
+                        <a class="footer-link" href="#">FAQ</a>
+                        <div class="footer-social pt-4 text-center">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="footer-copy">
+                            <div class="copy-right text-center pt-5">
+                                <p class="text-light">&copy; 2023. Foodies. All rights are reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
