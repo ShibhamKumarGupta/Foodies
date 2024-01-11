@@ -1,11 +1,11 @@
 function loginhome() {
-    window.location = "Foodies-login.html";
+    window.location = "index.html";
 
 }
 
 function logout(){
         localStorage.removeItem('udata');
-        document.location="Foodies-login.html";
+        document.location="index.html";
         alert("Successfully Logged out");
     }
     
@@ -18,7 +18,7 @@ function login() {
         var arr=new Array(email,pass);
         var jdata=JSON.stringify(arr);
         localStorage.setItem('udata',jdata);
-        window.location = "Foodies-home.html";
+        window.location = "index.html";
         
     }
     else {
@@ -35,7 +35,7 @@ function register(){
     
     if(emailid!='' && pass!='' && lastname!='' && firstname!='' && mobile!=''){
     alert("Successfully Registered");
-    window.location="Foodies-login.html";
+    window.location="index.html";
     }
     else{
         alert("Please fill all the columns properly..");
