@@ -1,11 +1,11 @@
 function loginhome() {
-    window.location = "index.html";
+    window.location = "Foodies-login.html";
 
 }
 
 function logout(){
         localStorage.removeItem('udata');
-        document.location="index.html";
+        document.location="Foodies-login.html";
         alert("Successfully Logged out");
     }
     
@@ -35,7 +35,7 @@ function register(){
     
     if(emailid!='' && pass!='' && lastname!='' && firstname!='' && mobile!=''){
     alert("Successfully Registered");
-    window.location="index.html";
+    window.location="Foodies-login.html";
     }
     else{
         alert("Please fill all the columns properly..");
