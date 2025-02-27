@@ -58,9 +58,7 @@ aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 <li class="nav-item">
     <a class="nav-link" href="Foodies-contact.html">Contact Us</a>
 </li>
-<li class="nav-item">
-    <a class="nav-link" href="#">Cart</a>
-</li>
+
 <li><button class="main-btn" onclick="loginhome();">
         Login/Register</button></li>
 </ul>
